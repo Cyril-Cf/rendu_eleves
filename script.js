@@ -102,7 +102,7 @@ document
     }
 
     // Construire le chemin du fichier
-    const filePath = `docs/${school}/${promo}/${subject}/${lastname}_${firstname}.xlsx`;
+    const filePath = `docs/${school}/${promo}/${subject}/${lastname.toLowerCase()}_${firstname.toLowerCase()}.xlsx`;
     downloadFile(filePath);
   });
 
